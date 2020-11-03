@@ -27,3 +27,24 @@ where `<string_to_check>` is the string to analize
 
 - `<boolean>` is logic value, `true` or `false`
 - `<number>` is positive numeric value
+
+## Example
+
+### Request
+
+`GET /check/ASDqwerty1234`
+
+### Response
+
+```json
+{
+  "containsUppercase": true,
+  "containsLowercase": true,
+  "containsDigits": true,
+  "containsSpecial": false,
+  "uppercaseCount": 3,
+  "lowercaseCount": 6,
+  "digitsCount": 4,
+  "specialCount": 0
+}
+```
