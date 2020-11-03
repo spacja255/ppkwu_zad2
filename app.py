@@ -21,4 +21,4 @@ def rev(text):
     
     return response
 
-app.run("lan", 8080)
+app.run("localhost", 8080)
