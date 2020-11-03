@@ -13,10 +13,10 @@ def rev(text):
         "containsLowercase": any(ch.islower() for ch in text),
         "containsDigits":    any(ch.isdigit() for ch in text),
         "containsSpecial":   any(not ch.isalnum() for ch in text),
-        "uppercaseCount":    0,
-        "lowercaseCount":    0,
-        "digitsCount":       0,
-        "specialCount":      0
+        "uppercaseCount":    sum(ch.isupper() for ch in text),
+        "lowercaseCount":    sum(ch.islower() for ch in text),
+        "digitsCount":       sum(ch.isdigit() for ch in text),
+        "specialCount":      sum(not ch.isalnum() for ch in text)
     }
     
     return response
