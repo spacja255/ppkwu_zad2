@@ -9,3 +9,21 @@ The API checks if the given string contains uppercase letters, lowercase letters
 `GET /check/<string_to_check>`
 
 where `<string_to_check>` is the string to analize
+
+## Response
+
+```
+{
+  "containsUppercase": <boolean>,
+  "containsLowercase": <boolean>,
+  "containsDigits":    <boolean>,
+  "containsSpecial":   <boolean>,
+  "uppercaseCount":    <number>,
+  "lowercaseCount":    <number>,
+  "digitsCount":       <number>,
+  "specialCount":      <number>
+}
+```
+
+- `<boolean>` is logic value, `true` or `false`
+- `<number>` is positive numeric value
